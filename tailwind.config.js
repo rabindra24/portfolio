@@ -8,11 +8,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient_pink' : 'linear-gradient(99deg, #D324A2 20.64%, #3830D9 125.03%);',
+        'heroImage' : "url('/images/herobg.webp')"
+      },
+      colors: {
+        'primary': "#0A0018",
+        'secondary' : '#FFF',
+        'pinkshade' : '#C14FEB',
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
