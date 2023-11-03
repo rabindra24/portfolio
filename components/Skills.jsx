@@ -8,8 +8,10 @@ const getData = async () => {
   const client = createClient({
     projectId: "f3is13ck",
     dataset: "production",
+    apiVersion: '2021-03-25',
     useCdn: true,
   });
+
 
   const query = '*[_type == "skills"]';
 
@@ -20,6 +22,7 @@ const getData = async () => {
 
 const Skills = async () => {
   const data = await getData();
+
   const client = createClient({
     projectId: "f3is13ck",
     dataset: "production",
@@ -27,19 +30,6 @@ const Skills = async () => {
   });
 
   const builder = imageUrlBuilder(client);
-
-  // console.log(data[0].skill.asset._ref)
-
-  // if (data) {
-  //   console.log(
-  //     builder
-  //       .image("image-37a394c97e51112176956f1211dc026eda41aea7-360x405-webp")
-  //       .auto("format")
-  //       .fit("max")
-  //       .width(720)
-  //       .toString()
-  //   );
-  // }
 
   return (
     <div className="w-full lg:max-w-[1450px] flex flex-col  mx-auto relative top-0 inset-0 backdrop-blur-lg md:py-20 py-10 overflow-hidden">

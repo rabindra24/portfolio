@@ -8,14 +8,17 @@ const getData = async () => {
   const client = createClient({
     projectId: "f3is13ck",
     dataset: "production",
+    apiVersion: '2021-03-25',
     useCdn: true,
   });
 
-  const query = '*[_type == "projects"]';
-  const hero = await client.fetch(query);
-  return hero;
-};
 
+  const query = '*[_type == "projects"]';
+
+  const skills = await client.fetch(query);
+
+  return skills;
+};
 const Projects = async () => {
   const data = await getData();
   const client = createClient({
@@ -25,7 +28,6 @@ const Projects = async () => {
   });
 
 
-  console.log(data)
 
   const builder = imageUrlBuilder(client);
   return (
@@ -35,7 +37,7 @@ const Projects = async () => {
       </h2>
       <div className="flex flex-wrap sm:p-10 p-5 gap-5 ">
         {data.map((item, index) => (
-          <a href={item.link} key={index}>
+          <a href={item.link || '#'} key={index}>
             <div className="sm:w-[300px] h-auto w-full ">
               <Image
                 src={`${builder

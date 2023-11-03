@@ -7,6 +7,7 @@ const getData = async () => {
   const client = createClient({
     projectId: "f3is13ck",
     dataset: "production",
+    apiVersion: '2021-03-25',
     useCdn: true,
   });
 

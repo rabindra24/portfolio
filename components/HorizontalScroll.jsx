@@ -28,7 +28,7 @@ const HorizontalScroll = () => {
           {ServiceData.map((item, index) => (
             <div
               key={index}
-              className="relative overflow-hidden  w-[300px] h-[380px] bg-red-200"
+              className="relative overflow-hidden  w-[300px] h-[380px]"
             >
               <button className=" bottom-0 left-1/2  transform -translate-x-1/2 -translate-y-1/2 absolute  text-white bg-primary  w-[80%] p-2 rounded-md font-bold ">
                 {item.title}
