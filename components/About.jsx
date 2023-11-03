@@ -7,7 +7,7 @@ const getData = async () => {
   const client = createClient({
     projectId: "f3is13ck",
     dataset: "production",
-    apiVersion: '2021-10-21',
+    apiVersion: '2029-12-25',
     useCdn: true,
   });
 
@@ -23,6 +23,8 @@ const AboutComponent = async () => {
     dataset: "production",
     useCdn: true,
   });
+
+  console.log(data)
 
   const builder = imageUrlBuilder(client);
 
