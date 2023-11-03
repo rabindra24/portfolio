@@ -38,7 +38,7 @@ const Social = async () => {
               width={60}
               height={60}
               className="w-[40px] mx-5"
-              alt={item.alt}
+              alt={item.link}
             />
           </a>
         ))}
