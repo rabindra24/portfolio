@@ -24,7 +24,7 @@ const Social = async () => {
     useCdn: true,
   });
 
-  console.log(data)
+  // console.log(data)
 
   const builder = imageUrlBuilder(client);
   return (
