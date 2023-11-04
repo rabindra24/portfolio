@@ -48,7 +48,7 @@ const Hero = async () => {
           .toString()}`}
         width={400}
         height={400}
-        className="md:w-[450px] absolute sm:bottom-0 bottom-10"
+        className="md:w-[450px] sm:absolute sm:bottom-0 bottom-10"
         alt={data[0].alt}
       />
     </div>

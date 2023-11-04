@@ -56,7 +56,7 @@ const Skills = async () => {
         ))}
       </div>
       <video
-        src="/images/encryption.webm"
+        src="/images/encryptionc.mp4"
         autoPlay
         loop
         muted

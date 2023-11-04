@@ -24,17 +24,17 @@ const AboutComponent = async () => {
     useCdn: true,
   });
 
-  console.log(data)
+  // console.log(data)
 
   const builder = imageUrlBuilder(client);
 
   return (
     <div className="w-full left-0 mx-auto h-full relative top-0 py-16 max-md:items-center flex justify-center  md:flex-row flex-col p-5 overflow-hidden">
       <div className="flex-1 z-10  w-full">
-        <h2 className="gradient_text capitalize md:text-[4rem] sm:text-[3rem] text-[2rem] font-bold ">
+        <h2 className="gradient_text mb-3 capitalize md:text-[4rem] sm:text-[3rem] text-[3rem] font-bold ">
           About
         </h2>
-        <p className="text-white md:text-[1rem] text-[.8rem]">
+        <p className="text-white md:text-[1rem] text-[rem]">
           {data[0].content}
         </p>
       </div>
@@ -52,12 +52,13 @@ const AboutComponent = async () => {
         />
       </div>
       <video
-        src="/images/cards-video.webm"
+        src="/images/cards-video(1).mp4"
         autoPlay
         loop
         muted
-        className="absolute w-full top-0 h-full md:object-contain object-cover"
+        className="absolute sm:w-full w-[500px]  sm:h-full h-[400px] md:object-contain object-cover"
       ></video>
+
     </div>
   );
 };
