@@ -7,7 +7,7 @@ const getData = async () => {
   const client = createClient({
     projectId: "f3is13ck",
     dataset: "production",
-    apiVersion: '2023-12-25',
+    apiVersion: '2021-10-25',
     useCdn: true,
   });
 
@@ -56,6 +56,7 @@ const AboutComponent = async () => {
         autoPlay
         loop
         muted
+         playsinline="true" disablePictureInPicture="true"
         className="absolute sm:w-full w-[500px]  sm:h-full h-[400px] md:object-contain object-cover"
       ></video>
 

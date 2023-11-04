@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 
 const Performance = () => {
   return (
-    <div className="relative md:py-20 py-10 overflow-hidden">
-      <h3 className="z-10 text-white text-center sm:text-[3rem] text-[2.4rem] max-sm:mb-10 font-bold ">
+    <div className="relative top-0 md:py-20 py-10 overflow-hidden">
+ 
+      <h3 className="z-[10] relative text-white text-center sm:text-[3rem] text-[2.4rem] max-sm:mb-10 font-bold ">
         Performance
       </h3>
       <div className="flex md:flex-row flex-col-reverse  ">
@@ -140,11 +141,12 @@ const Performance = () => {
         />{" "}
       </h4>
       <video
-        src="/images/blackholec.mp4"
+        src="/images/blackhole.webm"
         autoPlay
         loop
+        playsinline="true" 
         muted
-        className="absolute w-full top-0  h-full object-cover mix-blend-screen "
+        className="absolute sm:w-full w-[500px] top-0  sm:h-full h-[700px] md:object-contain object-cover "
       ></video>
     </div>
   );

@@ -45,13 +45,13 @@
   backdrop-filter: blur(7.5px);
 }
 
-/* html {
+html {
   scrollbar-width: none;
 }
 
 html::-webkit-scrollbar {
   display: none;
-} */
+}
 
 .vertical-timeline--animate .vertical-timeline-element-content.is-hidden,
 .vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {

@@ -127,9 +127,8 @@ export const projects =[
 ]
 
 export const ServiceData = [
-  {id : 1, img : '/images/aic.png', title : 'AI Software'},
-  {id : 2, img : '/images/seoc.png', title : 'SEO Improvement'},
-  {id : 3, img : '/images/social.png', title : 'SMM'},
-  {id : 4, img : '/images/service1.png', title : 'Digital Marketing'},
-  {id : 5, img : '/images/uiux.png', title : 'UI/UX'},
+  {id : 1, img : '/images/web.png', title : 'Web Development'},
+  {id : 2, img : '/images/seoc_11zon.jpg', title : 'SEO Improvement'},
+  {id : 4, img : '/images/service1_11zon.jpg', title : 'Digital Marketing'},
+  {id : 5, img : '/images/uiux_11zon.jpg', title : 'UI/UX'},
 ]

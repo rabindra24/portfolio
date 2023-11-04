@@ -52,7 +52,7 @@ const Experience = () => {
         <h2 className="text-white sm:text-[3rem] text-[2rem] font-bold text-center">
           Work Experience
         </h2>
-        <p className="text-center font-semibold sm:text-[.9rem] text-[.8rem] uppercase">
+        <p className="text-center text-gray-300 font-semibold sm:text-[.9rem] text-[.8rem] uppercase">
           What I have done so far
         </p>
       </div>
