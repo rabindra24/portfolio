@@ -60,7 +60,7 @@ const Skills = async () => {
         autoPlay
         loop
         muted
-         playsinline="true" disablePictureInPicture="true"
+         playsInline={true} disablePictureInPicture={true}
         className="absolute w-full top-5 h-full  object-cover mix-blend-screen "
       ></video>
     </div>

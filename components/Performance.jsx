@@ -1,12 +1,39 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Performance = () => {
+  useEffect(() => {
+    (function (d, t) {
+      var v = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      v.onload = function () {
+        window.voiceflow.chat.load({
+          verify: { projectID: "655337cb8b57010008df7a00" },
+          url: "https://general-runtime.voiceflow.com",
+          versionID: "production",
+        });
+      };
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+      v.type = "text/javascript";
+      s.parentNode.insertBefore(v, s);
+      hideElementsByClassName("vfrc-footer--watermark");
+      hideElementsByClassName("c-cejRVw");
+    })(document, "script");
+  }, []);
+
+  function hideElementsByClassName(className) {
+    var elements = document.getElementsByClassName(className);
+  
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.opacity = 0;
+    }
+  }
+  
+
   return (
     <div className="relative top-0 md:py-20 py-10 overflow-hidden">
- 
       <h3 className="z-[10] relative text-white text-center sm:text-[3rem] text-[2.4rem] max-sm:mb-10 font-bold ">
         Performance
       </h3>
@@ -45,7 +72,7 @@ const Performance = () => {
                 100%
               </div>
               <h3 className="text-center mt-1 font-bold uppercase text-white">
-              Best Practises
+                Best Practises
               </h3>
             </div>
             <div>
@@ -60,7 +87,7 @@ const Performance = () => {
                 100%
               </div>
               <h3 className="text-center mt-1 uppercase font-bold text-white">
-              accessibility
+                accessibility
               </h3>
             </div>
           </div>
@@ -94,7 +121,7 @@ const Performance = () => {
                 100%
               </div>
               <h3 className="text-center uppercase mt-1 font-bold text-white">
-              accessibility
+                accessibility
               </h3>
             </div>
           </div>
@@ -144,7 +171,7 @@ const Performance = () => {
         src="/images/blackhole.webm"
         autoPlay
         loop
-        playsinline="true" 
+        playsInline={true}
         muted
         className="absolute sm:w-full w-[500px] top-0  sm:h-full h-[700px] md:object-contain object-cover "
       ></video>

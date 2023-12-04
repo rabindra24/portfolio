@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +11,7 @@
   background-size: cover;
 } */
 
-*{
+* {
   scroll-behavior: smooth;
 }
 
@@ -91,15 +93,33 @@ html::-webkit-scrollbar {
   }
 }
 
-
-.aboutImage{
+.aboutImage {
   animation-name: example;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
 @keyframes example {
-  0% {transform: translateY(32px);}
-  50% {transform: translateY(-12px);}
-  100% {transform: translateY(32px);}
+  0% {
+    transform: translateY(32px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(32px);
+  }
+}
+
+.vfrc-footer--watermark .c-cejRVw {
+  opacity: 0 !important;
+}
+
+.c-cejRVw {
+  opacity: 0 !important;
+  color: white;
+}
+
+aside{
+  color:  white;
 }

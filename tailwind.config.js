@@ -16,6 +16,11 @@ module.exports = {
         'secondary' : '#FFF',
         'pinkshade' : '#C14FEB',
       },
+      fontFamily : {
+        'lato' : ['Lato'],
+        'lexend' : ['Lexend'],
+        'epilogue' : ['Epilogue'],
+      }
     },
   },
   plugins: [require("daisyui")],

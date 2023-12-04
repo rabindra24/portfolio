@@ -36,7 +36,7 @@ const Hero = async () => {
       <h1 className="gradient_text md:text-[4rem] sm:text-[3rem] text-[3.5rem] font-semibold">
         {data[0].subhead}
       </h1>
-      <h1 className="text-white uppercase md:text-[5rem] sm:text-[3.5rem] mb-10 text-[2.8rem] font-bold ">
+      <h1 className="text-white uppercase md:text-[5rem] sm:text-[3.5rem] mb-10 text-[2.8rem] font-bold font-roboto">
         {data[0].occupation}
       </h1>
 

@@ -34,7 +34,7 @@ const AboutComponent = async () => {
         <h2 className="gradient_text mb-3 capitalize md:text-[4rem] sm:text-[3rem] text-[3rem] font-bold ">
           About
         </h2>
-        <p className="text-white md:text-[1rem] text-[rem]">
+        <p className="text-white md:text-[1.1rem] font-epilogue">
           {data[0].content}
         </p>
       </div>
@@ -56,7 +56,7 @@ const AboutComponent = async () => {
         autoPlay
         loop
         muted
-         playsinline="true" disablePictureInPicture="true"
+         playsInline={true} disablePictureInPicture={true}
         className="absolute sm:w-full w-[500px]  sm:h-full h-[400px] md:object-contain object-cover"
       ></video>
 
