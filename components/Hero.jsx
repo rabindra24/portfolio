@@ -56,3 +56,4 @@ const Hero = async () => {
 };
 
 export default Hero;
+export const revalidate = 3

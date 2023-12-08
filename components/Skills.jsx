@@ -68,3 +68,5 @@ const Skills = async () => {
 };
 
 export default Skills;
+
+export const revalidate = 3

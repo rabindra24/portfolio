@@ -105,7 +105,7 @@ const Performance = () => {
                 100%
               </div>
               <h3 className="uppercase text-center mt-2 font-bold text-white">
-                Best Practises
+                Performance
               </h3>
             </div>
 
@@ -121,7 +121,7 @@ const Performance = () => {
                 100%
               </div>
               <h3 className="text-center uppercase mt-1 font-bold text-white">
-                accessibility
+                Accessibility
               </h3>
             </div>
           </div>
@@ -180,3 +180,4 @@ const Performance = () => {
 };
 
 export default Performance;
+

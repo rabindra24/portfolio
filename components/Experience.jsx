@@ -68,3 +68,4 @@ const Experience = () => {
 };
 
 export default Experience;
+export const revalidate = 3

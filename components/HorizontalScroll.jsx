@@ -49,3 +49,4 @@ const HorizontalScroll = () => {
 };
 
 export default HorizontalScroll;
+export const revalidate = 3

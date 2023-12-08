@@ -65,3 +65,5 @@ const AboutComponent = async () => {
 };
 
 export default AboutComponent;
+
+export const revalidate = 3
